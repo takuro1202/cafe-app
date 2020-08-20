@@ -22,3 +22,52 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|username|string|null: false|
+|image|string| |
+
+## Association
+- has_many :posts
+- has_many :comments
+
+## postsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|cafename|string|null: false|
+|place|string|null: false|
+|image|string| |
+|text|text|null: false|
+|evaluation1|integer|null: false|
+|evaluation2|integer|null: false|
+|evaluation3|integer|null: false|
+|evaluation4|integer|null: false|
+|evaluation5|integer|null: false|
+|evaluation6|integer|null: false|
+|existence1|string| |
+|existence2|string| |
+|existence3|string| |
+|user_id|integer|null: false, foreign_key: true|
+
+
+
+## Association
+- has_many :comments
+- belongs_to :user
+
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|post_id|integer|null: false|foreign_key: true|
+|user_id|integer|null: false|foreign_key: true|
+
+## Association
+- belongs_to :user
+- belongs_to :posts
+
+
