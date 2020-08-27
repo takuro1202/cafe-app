@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  height: 170px;
+  width: 100%;
+  background-color:#99CCCC;
+  display: flex;
+  justify-content: space-between;  
+  .title{
+    line-height: 170px;
+    text-align: center;
+    font-size: 70px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    margin-left: 60px;
+    .fas.fa-coffee {
+      float: left;
+      line-height: 170px;
+      margin-right: 20px;
+    }
+  }
+  
+  .name-box {
+    display: flex;
+    line-height: 200px;
+    text-align: center;
+    margin-right: 20px;
+    .user-name {
+      margin-right: 20px;
+      font-size: 20px;
+      -webkit-text-stroke: 1px #000;
+      color: transparent;
+    }
+    .box {
+      display: flex;
+    }
+  }
+}
+
+.navigation_bar {
+  height: 65px;
+  width: 100%;
+  border-bottom: solid 2px;
+  display: flex;
+  line-height: 65px;
+  justify-content: space-between;
+  
+  .review {
+    font-size: 25px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    margin-left: 30px;
+  }
+  form {
+    display: flex;
+    margin-right: 30px;
+    .input-text{
+      margin-right: 10px;
+      font: 15px/24px sans-serif;
+	    box-sizing: border-box;
+	    width: 100%;
+      padding: 0.3em;
+	    transition: 0.3s;
+	    letter-spacing: 1px;
+	    color: black;
+	    border: none;
+	    border-bottom: 2px solid #1b2538;
+      background: transparent;
+      outline: none;
+    }
+    .form-btn {
+    }
+  }
+}
+
+.review_main {
+  height:calc(100vh - 170px - 65px);
+  width: 100%;
+  margin: 0 auto;
+  overflow: scroll;
+  background-color:#996633;
+  .post-box {
+    height: 230px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 40px;
+    border: solid 2px;
+    display: flex;
+    .cafe-name {
+      font-size: 40px;
+      margin-left: 8px;
+      margin-bottom: 10px;
+      font-family: "Gill Sans", sans-serif;
+    }
+    .address-box {
+      display: flex;
+      .fas.fa-map-marker-alt {
+        margin-left: 15px;
+      }
+      .address {
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-weight: bold; 
+      }
+    }
+    
+    .nickname {
+      font-size: 15px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .p1 {
+      font-size: 15px;
+      margin-left: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .existence {
+      display: flex;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      li {
+        margin-right: 20px;
+      }
+    }
+    .evaluation {
+      display: flex;
+      margin-left: 40px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      list-style: disc;
+      li {
+        margin-right: 40px;
+      }
+    }
+    .post-box-right {
+      margin: 0 auto;
+      margin-top: 60px;
+      .fas.fa-comment-alt {
+        font-size: 2.5em;
+        cursor: pointer;
+      }
+      .detail {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
