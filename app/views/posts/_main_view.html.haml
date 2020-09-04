@@ -1,0 +1,74 @@
+.header 
+  .title
+    cafe app
+    %i.fas.fa-coffee
+  .name-box
+    .user-name taku
+    .box  
+      .box_user_edit
+        = link_to  do
+          = icon('fas','edit',class: 'icon')
+      .box_cog
+        = link_to  do
+          = icon('fas', 'cog',class: 'icon')
+       
+.navigation_bar
+  .review 
+    review 
+  %form 
+    .input-box
+      %input{type: "text", placeholder: "キーワード検索", class: "input-text"}
+    .form-btn
+      %input{type: "submit", value: "検索", class: "send__btn"} 
+     
+.review_main
+  .post-box
+    .post-box-left
+      .cafe-name cafe-a
+      .address-box 
+        %i.fas.fa-map-marker-alt
+        .address 東京都文京区小日向
+      .nickname Review Writer : taku
+      %ul.existence
+        %li.ex1  ※ Wi-Fi ○
+        %li.ex2  充電スペース ○
+        %li.ex3  喫煙スペース ×
+      .p1 5段階評価
+      %ul.evaluation 
+        %li.e1  勉強,仕事 5
+        %li.e2  オシャレ 4
+        %li.e3  デート 5
+        %li.e4  友達と,おしゃべり 3
+        %li.e5  食事 2
+    .post-box-right
+      .review_picture_font
+        = link_to  do
+          %i.fas.fa-comment-alt
+            %i.fas.fa-images   
+      %p.detail  ⬆️detail 
+      %p.date  8月30日
+  .post-box
+    .post-box-left
+      .cafe-name cafe-a
+      .address-box 
+        %i.fas.fa-map-marker-alt
+        .address 東京都文京区小日向
+      .nickname Review Writer : taku
+      %ul.existence
+        %li.ex1  ※ Wi-Fi ○
+        %li.ex2  充電スペース ○
+        %li.ex3  喫煙スペース ×
+      .p1 5段階評価
+      %ul.evaluation 
+        %li.e1  勉強,仕事 5
+        %li.e2  オシャレ 4
+        %li.e3  デート 5
+        %li.e4  友達と,おしゃべり 3
+        %li.e5  食事 2
+    .post-box-right
+      .review_picture_font
+        = link_to  do
+          %i.fas.fa-comment-alt
+            %i.fas.fa-images   
+      %p.detail  ⬆️detail 
+      %p.date  8月30日
