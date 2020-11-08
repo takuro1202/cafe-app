@@ -1,0 +1,14 @@
+.header 
+  .title
+    cafe app
+    
+    %i.fas.fa-coffee
+  .name-box
+    .user-name 
+      = current_user.name
+.navigation_bar
+.contents.row
+  .success
+    %h3
+      投稿が完了しました。
+    %a.btn{:href => "/"} 投稿一覧へ戻る

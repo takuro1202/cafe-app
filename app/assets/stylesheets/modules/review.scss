@@ -1,0 +1,100 @@
+#review_cafename {
+  height: 50px;
+  width: 600px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+#review_address {
+  height: 50px;
+  width: 600px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+#review_image {
+  height: 50px;
+  width: 600px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.c {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 30px;
+  .c1 {
+    margin-right: 30px;
+  }
+  .c2 {
+    margin-right: 30px;
+  }
+}
+.d {
+  display: flex;
+  margin-left: 80px;
+  margin-top: 30px;
+
+  .d1 {
+    margin-right: 20px;
+    #review_evaluation1 {
+      width: 50px;
+    }
+  }
+  .d2 {
+    margin-right: 20px;
+    #review_evaluation2 {
+      width: 50px;
+    }
+  }
+  .d3 {
+    margin-right: 20px;
+    #review_evaluation3 {
+      width: 50px;
+    }
+  }
+  .d4 {
+    margin-right: 20px;
+    width: 200px;
+    #review_evaluation4 {
+      width: 50px;
+    }
+  }
+  .d5 {
+    #review_evaluation5 {
+      width: 50px;
+    }
+  }
+}
+.f {
+  margin-left: 80px;
+  margin-top: 30px;
+  #review_text {
+    width: 1000px;
+    height: 200px;
+  }
+}
+.g {
+  margin-left: 80px;
+  margin-top: 30px;
+  .send__btn {
+    height: 40px;
+    width: 100px;
+
+  }
+}
+
+.contents.row {
+  .success {
+    height: 100px;
+    width: 100px;
+    height: 100px;
+    width: 100px;
+    %h3{
+      font-weight: bold;
+      align-items: center;
+      font-size: 50px;
+    }
+    %a {
+    
+    }
+  }
+}
+
