@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .header {
-  height: 170px;
+  height: 170px; 
   width: 100%;
   background-color:#99CCCC;
   display: flex;
@@ -75,11 +75,9 @@
 }
 
 .review_main {
-  height:calc(100vh - 170px - 65px);
+  height: 100%;
   width: 100%;
   margin: 0 auto;
-  overflow: scroll;
-  background-image:url(ivy-1711048__480.jpg);
   .post-box {
     height: 230px;
     width: 1000px;
@@ -89,6 +87,7 @@
     margin-bottom: 40px;
     border: solid 2px;
     display: flex;
+    border-radius: 10px;
     .cafe-name {
       font-size: 40px;
       margin-left: 8px;

@@ -31,15 +31,15 @@ Things you may want to cover:
 |image|string| |
 
 ## Association
-- has_many :posts
+- has_many :reviews
 - has_many :comments
 
-## postsテーブル
+## reviewsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
 |cafename|string|null: false|
-|place|string|null: false|
+|address|string|null: false|
 |image|string| |
 |text|text|null: false|
 |evaluation1|integer|null: false|
@@ -47,7 +47,6 @@ Things you may want to cover:
 |evaluation3|integer|null: false|
 |evaluation4|integer|null: false|
 |evaluation5|integer|null: false|
-|evaluation6|integer|null: false|
 |existence1|string| |
 |existence2|string| |
 |existence3|string| |
@@ -56,7 +55,7 @@ Things you may want to cover:
 
 
 ## Association
-- has_many :comments
+- has_many :reviews
 - belongs_to :user
 
 ## commentsテーブル
