@@ -168,21 +168,25 @@
     }
     .post-box-right {
       margin: 0 auto;
-      margin-top: 60px;
+      
+      .more_list {
+        margin-left: 280px;
+        border: 1px solid;
+        a {
+          text-decoration: none;
+          color: black;
+         }
+      }
       .review_picture_font {
         font-size: 2.5em;
         cursor: pointer;
-        margin-left: 60px;
-      }
-      .detail {
-        font-size: 20px;
-        margin-top: 15px;
-        margin-left: 80px;
+        margin-left: 100px;
+        margin-top: 65px;
       }
       .date {
         font-weight: bold;
         margin-left: 170px;
-        margin-top: 28px;
+        margin-top: 50px;
  
       }
     }
