@@ -13,6 +13,7 @@ class CreateReviews < ActiveRecord::Migration[5.0]
       t.string :existence1, null: false
       t.string :existence2, null: false
       t.string :existence3, null: false
+      t.references :user, foreign_key: true
       t.timestamps null: false
  
     end

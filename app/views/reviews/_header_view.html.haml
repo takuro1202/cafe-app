@@ -1,7 +1,7 @@
 .header 
   .title
-    cafe app
-    %i.fas.fa-coffee
+    = link_to "cafe app", '/', class: "header__title--text"
+    %i.fas.fa-coffee 
   .name-box
     .user-name 
       = current_user.name

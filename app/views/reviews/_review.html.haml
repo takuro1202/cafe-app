@@ -1,0 +1,39 @@
+.review_main
+  .post-box
+    .post-box-left
+      .cafe-name
+        = review.cafename
+      .address-box 
+        %i.fas.fa-map-marker-alt
+        .address
+          = review.address
+      .nickname 
+        Review Writer : 
+        = review.user.name
+      %ul.existence
+        %li.ex1  ※ Wi-Fi 
+        = review.existence1
+        %li.ex2  充電スペース 
+        = review.existence2
+        %li.ex3  喫煙スペース
+        = review.existence3 
+      .p1 1~5
+      %ul.evaluation 
+        %li.e1  勉強,仕事 
+        = review.evaluation1
+        %li.e2  オシャレ 
+        = review.evaluation2
+        %li.e3  デート 
+        = review.evaluation3
+        %li.e4  友達と,おしゃべり 
+        = review.evaluation4
+        %li.e5  食事 
+        = review.evaluation5
+    .post-box-right
+      .review_picture_font
+        = link_to review_path(review.id) do
+          %i.fas.fa-comment-alt
+            %i.fas.fa-images   
+      %p.detail  ⬆️detail 
+      %p.date 
+        = review.created_at.strftime("%Y年%m月%d日")
