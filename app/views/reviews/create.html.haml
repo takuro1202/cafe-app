@@ -1,14 +1,13 @@
 .header 
   .title
     cafe app
-    
     %i.fas.fa-coffee
   .name-box
     .user-name 
       = current_user.name
 .navigation_bar
+  .review 
+    投稿完了
 .contents.row
   .success
-    %h3
-      投稿が完了しました。
-    %a.btn{:href => "/"} 投稿一覧へ戻る
+    %a.btn{:href => "/"} review一覧へ戻る

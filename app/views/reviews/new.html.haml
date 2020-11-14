@@ -1,11 +1,5 @@
 .header 
-  .title
-    cafe app
-    
-    %i.fas.fa-coffee
-  .name-box
-    .user-name 
-      = current_user.name
+  = render 'header_view'
 .navigation_bar
   .review 
     review-write
@@ -13,7 +7,7 @@
   .a
     = f.text_field :cafename, placeholder: "cafename"
   .b  
-    = f.text_field :address, placeholder: "cafe-address"
+    = f.text_field :address, placeholder: "最寄駅"
     
   .c
     .c1
