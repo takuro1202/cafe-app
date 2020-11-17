@@ -33,6 +33,8 @@
       %ul.more_list
         %li
           = link_to '削除', "/reviews/#{review.id}", method: :delete
+        %li
+          = link_to '編集', "/reviews/#{review.id}/edit", method: :get
       .review_picture_font
         = link_to review_path(review.id) do
           %i.fas.fa-comment-alt

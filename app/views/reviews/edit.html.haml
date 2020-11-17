@@ -1,0 +1,43 @@
+.header 
+  = render 'header_view'
+.navigation_bar
+  .review 
+    review-write
+= form_for @review do |f|
+  .a
+    = f.text_field :cafename, placeholder: "cafename"
+  .b  
+    = f.text_field :address, placeholder: "最寄駅"
+    
+  .c
+    .c1
+      %p1 wi-fi
+      = f.text_field :existence1, placeholder: "あり/なし"
+    .c2
+      %p2 充電スペース
+      = f.text_field :existence2, placeholder: "あり/なし"
+    .c3
+      %p3 喫煙スペース
+      = f.text_field :existence3, placeholder: "あり/なし"
+  .d
+    .d1 
+      %p4 勉強・仕事
+      = f.text_field :evaluation1, placeholder: "1~5"
+    .d2
+      %p5 オシャレ
+      = f.text_field :evaluation2, placeholder: "1~5"
+    .d3
+      %p6 デート
+      = f.text_field :evaluation3, placeholder: "1~5"
+    .d4
+      %p7 友達と・おしゃべり
+      = f.text_field :evaluation4, placeholder: "1~5"
+    .d5
+      %p8 食事
+      = f.text_field :evaluation5, placeholder: "1~5"
+  .e   
+    = f.text_field :image, placeholder: "image"
+  .f
+    =f.text_area :text, placeholder: "review"
+  .g
+    =f.submit 'Send', class: "send__btn"
