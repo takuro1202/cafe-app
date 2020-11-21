@@ -8,6 +8,30 @@
     = @review.text
   .photo
     = @review.image
+.comments
+  - if current_user
+    = form_for [@review, @comment] do |f|
+      .a1
+        = f.text_area :text, placeholder: "コメントする", rows: "2"
+      .a2
+        = f.submit "SEND"
+  - else
+    %strong
+      %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+.commnts-u
+  %h4 ＜コメント一覧＞
+  - if @comments
+    - @comments.each do |comment|
+      %p
+        %strong
+          = link_to comment.user.name, "/users/#{comment.user_id}"
+          ：
+        = comment.text
+
+  
+
+
+
     
 
   
